@@ -1,7 +1,7 @@
 use finance_rust::config::parse::parse_config;
-use finance_rust::config::parse::Config;
-//use generator::stock::geometric_brownian_motion::generate;
+use finance_rust::generator::generate::generate;
 
 fn main() {
-    let _config: Config = parse_config("/execution.yaml").unwrap();
+    let config = parse_config("/execution.yaml").unwrap();
+    let _paths = generate(&config);
 }

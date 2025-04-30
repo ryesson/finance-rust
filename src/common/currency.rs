@@ -1,3 +1,6 @@
+use serde::Deserialize;
+
+#[derive(Copy, Clone, Debug, Deserialize)]
 pub enum Currency {
     USD,
     GBP,
