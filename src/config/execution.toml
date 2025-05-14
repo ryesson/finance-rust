@@ -1,3 +1,5 @@
+[execution_mode]
+execution_mode = "simulated"
 
 [generator_params]
 # "brownian",

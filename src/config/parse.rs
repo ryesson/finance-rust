@@ -5,7 +5,14 @@ use std::fs;
 use std::path::Path;
 
 #[derive(Debug, Deserialize)]
+pub enum ExecutionMode {
+    Simulated,
+    RealWorld,
+}
+
+#[derive(Debug, Deserialize)]
 pub struct Config {
+    pub execution_mode: ExecutionMode,
     pub generator_params: GeneratorParams,
     pub brownian_params: BrownianParams,
 }
